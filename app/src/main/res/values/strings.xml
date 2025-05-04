@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CountriesQuizApp</string>
+    <string-array name="capitals">
+        <item>Please Select Item</item>
+        <item>cairo</item>
+        <item>ws</item>
+        <item>berlin</item>
+        <item>roma</item>
+        <item>london</item>
+        <item>paris</item>
+        <item>vienna</item>
+        <item>Athena</item>
+
+
+
+    </string-array>
+</resources>

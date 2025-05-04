@@ -1,0 +1,100 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+
+    tools:context=".QuizPage">
+    <TextView
+        android:id="@+id/questionNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginBottom="20dp"
+        android:textColor="#555555"
+        android:textSize="16sp"
+        android:textStyle="bold"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:fontFamily="sans-serif-medium"
+        android:textAlignment="center"
+        android:textColor="#333333"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+android:id="@+id/spinner"
+android:layout_width="0dp"
+android:layout_height="50dp"
+android:layout_marginTop="50dp"
+android:backgroundTint="?attr/colorPrimary"
+android:popupBackground="#FFFFFF"
+
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/questionText" />
+
+<Button
+android:id="@+id/button"
+android:layout_width="0dp"
+android:layout_height="50dp"
+android:layout_marginTop="50dp"
+android:layout_marginStart="30dp"
+android:layout_marginEnd="15dp"
+android:text="Start"
+android:textColor="#FFFFFF"
+android:backgroundTint="#4CAF50"
+android:fontFamily="sans-serif-medium"
+android:background="@drawable/rounded_button"
+android:onClick="start"
+app:layout_constraintTop_toBottomOf="@+id/spinner"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/button2" />
+
+<Button
+android:id="@+id/button2"
+android:layout_width="0dp"
+android:layout_height="50dp"
+android:layout_marginTop="50dp"
+android:layout_marginEnd="30dp"
+android:layout_marginStart="15dp"
+android:text="Next"
+android:textColor="#FFFFFF"
+android:backgroundTint="#3F51B5"
+android:fontFamily="sans-serif-medium"
+android:background="@drawable/rounded_button"
+android:onClick="next"
+app:layout_constraintTop_toBottomOf="@+id/spinner"
+app:layout_constraintStart_toEndOf="@+id/button"
+app:layout_constraintEnd_toEndOf="parent" />
+
+<TextView
+android:id="@+id/lastScore"
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginBottom="200dp"
+android:text=""
+android:textColor="#555555"
+android:textSize="18sp"
+android:gravity="center"
+android:fontFamily="sans-serif"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
